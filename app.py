@@ -490,7 +490,10 @@ if st.session_state.running and not st.session_state.done:
             ]
         })
 
-        results["search"] = sr["messages"][-1].content
+        results["search"] ="\n\n".join(
+            m.content for m in sr["messages"]
+            if m.__class__.__name__ in ("ToolMessage", "AIMessage") and m.content
+        )
         st.session_state.results = dict(results)
 
     # ── Step 2: Reader ──

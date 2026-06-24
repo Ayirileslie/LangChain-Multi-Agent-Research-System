@@ -6,6 +6,10 @@ A powerful multi-agent research system built with LangChain that autonomously re
   <strong>🔬 Research Automation • 🤖 Multi-Agent Orchestration • 📝 Intelligent Report Generation</strong>
 </p>
 
+## 🎥 Demo
+
+![Demo](assets/demo.gif)
+
 ---
 
 ## 🌟 Features
@@ -68,7 +72,7 @@ A powerful multi-agent research system built with LangChain that autonomously re
 | Technology | Purpose |
 |-----------|---------|
 | **LangChain** | Multi-agent orchestration and chain management |
-| **OpenAI GPT-4o-mini** | Language model for agents and chains |
+| **Groq GPT-4o-mini** | Language model for agents and chains |
 | **Streamlit** | Interactive web UI |
 | **Tavily API** | Web search and information retrieval |
 | **BeautifulSoup4** | HTML parsing and content extraction |
@@ -82,7 +86,7 @@ A powerful multi-agent research system built with LangChain that autonomously re
 ## 📋 Prerequisites
 
 - Python 3.11 or higher
-- OpenAI API Key
+- groq API Key
 - Tavily API Key
 
 ---
@@ -121,7 +125,7 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
 ```
 

@@ -22,8 +22,10 @@ def run_research_pipeline(topic : str) -> dict:
     search_result = search_agent.invoke({
         "messages" : [("user", f"Find recent, reliable and detailed information about: {topic}")]
     })
-    state["search_results"] = search_result
-
+    state["search_results"] = "\n\n".join(
+        m.content for m in search_result["messages"]
+        if m.__class__.__name__ in ("ToolMessage", "AIMessage") and m.content
+    )
     print("\n search result ",state['search_results'])
 
 
