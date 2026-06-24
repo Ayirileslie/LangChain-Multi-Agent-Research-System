@@ -72,7 +72,7 @@ A powerful multi-agent research system built with LangChain that autonomously re
 | Technology | Purpose |
 |-----------|---------|
 | **LangChain** | Multi-agent orchestration and chain management |
-| **Groq GPT-4o-mini** | Language model for agents and chains |
+| **Groq llama-3.1-8b-instant** | Language model for agents and chains |
 | **Streamlit** | Interactive web UI |
 | **Tavily API** | Web search and information retrieval |
 | **BeautifulSoup4** | HTML parsing and content extraction |
